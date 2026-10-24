@@ -40,3 +40,10 @@ footer{background:#1b232c;color:#c5ccd2;padding:1.8rem 0}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem 2rem}
 footer a{color:#f4f5f4}
 @media(prefers-reduced-motion:no-preference){.btn{transition:background .15s}}
+:root{--orange:#f65f09}
+.brand{display:block;line-height:0}
+.brand img{width:68px;height:68px;display:block}
+nav a:hover,nav a[aria-current]{border-color:var(--orange)}
+.btn{background:var(--orange);color:#1b232c}
+.btn:hover{background:var(--orange);filter:brightness(1.1)}
+.btn.alt:hover{background:transparent}
