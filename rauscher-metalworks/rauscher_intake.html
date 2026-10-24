@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a quote | Rauscher Metalworks</title>
+<meta name="description" content="Tell Rauscher Metalworks about your repair or build and get a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">Rauscher Metalworks</a>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a><a href="intake.html" aria-current="page">Request a quote</a></nav></div><div class="temper"></div></header>
+<main><div class="wrap">
+<h1>Request a quote</h1>
+<p class="lead">Tell him what you need. He’ll follow up to ask for photos and set up a time to look at the job.</p>
+<form name="intake" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="intake">
+<p hidden><label>Leave blank <input name="bot-field"></label></p>
+<label>Name <input name="name" autocomplete="name" required></label>
+<label>Phone <input type="tel" name="phone" autocomplete="tel" required></label>
+<label>Email <input type="email" name="email" autocomplete="email"></label>
+<label>Job type <select name="job_type" required><option value="">Choose one</option><option>Welding repair</option><option>Metal fabrication</option><option>Mechanical repair</option><option>Custom commission</option><option>Something else</option></select></label>
+<label>Town or city <input name="location"></label>
+<label>Describe the job <textarea name="details" rows="6" required></textarea></label>
+<label>Best way to reach you <select name="contact_pref"><option>Phone call</option><option>Text</option><option>Email</option></select></label>
+<button class="btn" type="submit">Send request</button>
+</form>
+</div></main>
+<footer><div class="wrap"><span>Rauscher Metalworks &middot; San Luis Obispo County &amp; the Central Coast</span>
+<span><a href="tel:+18052669282">(805) 266-9282</a> &middot; <a href="https://www.instagram.com/rauschermetalworks/" rel="noopener">@rauschermetalworks</a></span></div></footer>
+</body>
+</html>
